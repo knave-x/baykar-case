@@ -3,8 +3,8 @@ import React from "react";
 const Section2 = () => {
   function FeatureCard({ icon, title, description }) {
     return (
-      <div className="flex flex-col gap-4 md:gap-15">
-        <div className="w-16 h-16 rounded-full bg-gray-100 flex items-center justify-center">
+      <div className="flex flex-col  items-center  md:items-start gap-4 md:gap-15">
+        <div className="w-16 h-16 rounded-full bg-gray-100 flex  justify-center">
           {icon}
         </div>
         <h3 className="text-lg text-center md:text-left">{title}</h3>
