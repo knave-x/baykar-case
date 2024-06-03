@@ -17,7 +17,6 @@ const Section7 = () => {
       <img
         className="absolute z-20 lg:-translate-x-[380px] -translate-y-48"
         src={Shoes}
-       
       />
     </div>
   );
