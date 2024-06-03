@@ -7,6 +7,7 @@ import Section4 from "./pages/Section4";
 import Section5 from "./pages/Section5";
 import Section6 from "./pages/Section6";
 import Section7 from "./pages/Section7";
+import Footer from "./pages/Footer";
 
 const App = () => {
   return (
@@ -17,9 +18,9 @@ const App = () => {
       <Section3 />
       <Section4 />
       <Section5 />
-      <Section6/>
-      <Section7/>
-      <h1 className="text-7xl text-center text-red-500">test</h1>
+      <Section6 />
+      <Section7 />
+      <Footer />
     </div>
   );
 };
