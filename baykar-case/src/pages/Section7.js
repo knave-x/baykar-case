@@ -12,11 +12,12 @@ const Section7 = () => {
           Shoes Collected
         </div>
       </div>
-      <img className="absolute z-0" src={World} />
-      <img className="absolute z-10" src={Ellipses} />
+      <img className="absolute z-0" src={World} alt="world"/>
+      <img className="absolute z-10" src={Ellipses} alt="ellipses" />
       <img
         className="absolute z-20 lg:-translate-x-[380px] -translate-y-48"
         src={Shoes}
+        alt="shoes"
       />
     </div>
   );
