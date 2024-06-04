@@ -118,8 +118,8 @@ const Section6 = () => {
     },
   ];
   return (
-    <section className="flex flex-col md:flex-row lg:flex-col  gap-8 md:gap-20 py-12 md:py-20 px-4 md:px-20 z-40   w-full">
-      <div className="flex flex-col gap-6 z-40">
+    <section className="flex flex-col md:flex-row lg:flex-col  gap-8 md:gap-2  z-40   w-full">
+      <div className="flex flex-col gap-6 z-40 py-12 md:py-20 px-4 md:px-20">
         <h1 class="text-black font-bold text-3xl md:text-7xl  text-center md:text-left">
           Grow your collection
         </h1>
@@ -132,7 +132,7 @@ const Section6 = () => {
       </div>
 
       <div className="flex flex-col xl:flex-row overflow-hidden items-center xl:space-x-20 xl:space-y-8 xl:space-y-0  w-full z-40 ">
-        <div className="flex xl:block xl:space-y-4 overflow-scroll scroll-smooth scroll-hidden w-full p-4">
+        <div className="flex xl:block xl:space-y-4 overflow-scroll scroll-smooth scroll-hidden w-full p-4 py-12 md:py-20 px-4 md:px-20">
           {sections.map((section) => (
             <div
               key={section.id}

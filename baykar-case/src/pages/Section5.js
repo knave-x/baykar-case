@@ -273,11 +273,11 @@ const Section5 = () => {
           </svg>
         </div>
       </div>
-      <div className="h-[421px] absolute w-full	mt-20 px-20">
+      <div className="h-[421px] absolute w-full	mt-20 px-0 md:px-20">
         <div className=" bg-amber-200 h-[421px] w-full	mt-20 "></div>
       </div>
 
-      <div className="relative mt-16 ">
+      <div className="relative mt-32 md:mt-16  ">
         <div className="relative overflow-x-scroll  h-[421px]">
           <div className="flex px-6 absolute  ">
             {testimonials.map((testimonial) => (
