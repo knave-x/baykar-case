@@ -1,76 +1,102 @@
 import React from "react";
+import Zoomerr from "../assets/Zoomerr.svg";
+import Shells from "../assets/Shells.svg";
+import ArtVenue from "../assets/ArtVenue.svg";
+import Waves from "../assets/Waves.svg";
+import Profile1 from "../assets/photos/profile1.jpg";
+import Profile2 from "../assets/photos/profile2.jpg";
+import Profile3 from "../assets/photos/profile3.jpg";
+import Profile4 from "../assets/photos/profile4.jpg";
 
 const Section5 = () => {
   const testimonials = [
     {
       id: 1,
+      icon: Zoomerr,
       company: "Zoomerr",
       feedback:
         "Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.",
       name: "Hellen Jummy",
       position: "Team Lead",
-      img: "path_to_hellen_image",
+      img: Profile1,
     },
     {
       id: 2,
+      icon: Shells,
       company: "SHELLS",
       feedback:
         "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.",
       name: "Hellena John",
       position: "Co-founder",
-      img: "path_to_hellena_image",
+      img: Profile2,
     },
     {
       id: 3,
+      icon: ArtVenue,
       company: "ArtVenue",
       feedback:
         "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.",
       name: "David Oshodi",
       position: "Manager",
-      img: "path_to_david_image",
+      img: Profile3,
     },
     {
       id: 4,
-      company: "ArtVenue",
+      icon: Waves,
+      company: "WAVES",
       feedback:
         "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.",
       name: "David Oshodi",
       position: "Manager",
-      img: "path_to_david_image",
+      img: Profile4,
     },
     {
       id: 5,
-      company: "ArtVenue",
+      icon: Zoomerr,
+      company: "Zoomerr",
       feedback:
-        "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.",
-      name: "David Oshodi",
-      position: "Manager",
-      img: "path_to_david_image",
+        "Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.",
+      name: "Hellen Jummy",
+      position: "Team Lead",
+      img: Profile1,
     },
     {
       id: 6,
-      company: "ArtVenue",
+      icon: Shells,
+      company: "SHELLS",
       feedback:
-        "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.",
-      name: "David Oshodi",
-      position: "Manager",
-      img: "path_to_david_image",
+        "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.",
+      name: "Hellena John",
+      position: "Co-founder",
+      img: Profile2,
     },
     {
       id: 7,
+      icon: ArtVenue,
       company: "ArtVenue",
       feedback:
         "A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.",
       name: "David Oshodi",
       position: "Manager",
-      img: "path_to_david_image",
+      img: Profile3,
     },
   ];
 
-  const TestimonialCard = ({ company, feedback, name, position, img }) => (
+  const TestimonialCard = ({
+    company,
+    feedback,
+    name,
+    position,
+    img,
+    icon,
+  }) => (
     <div className=" flex bg-white rounded-lg shadow-md p-6 m-4 w-96 h-96 flex flex-col justify-between">
       <div>
-        <h3 className="text-xl font-semibold mb-2">{company}</h3>
+        <div className="flex flex-row space-x-3 text-center mb-5">
+          <img src={icon} alt={name} />
+          <h3 className="text-xl font-semibold mb-2">{company}</h3>
+        </div>
+
         <p className="text-gray-700 mb-4">{feedback}</p>
       </div>
       <div className="flex items-center">
