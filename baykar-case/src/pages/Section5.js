@@ -92,9 +92,9 @@ const Section5 = () => {
   }) => (
     <div className=" flex bg-white rounded-lg shadow-md p-6 m-4 w-96 h-96 flex flex-col justify-between">
       <div>
-        <div className="flex flex-row space-x-3 text-center mb-5">
+        <div className="flex items-center  space-x-3 text-center mb-9 ">
           <img src={icon} alt={name} />
-          <h3 className="text-xl font-semibold mb-2">{company}</h3>
+          <h3 className="text-xl mb-2">{company}</h3>
         </div>
 
         <p className="text-gray-700 mb-4">{feedback}</p>
