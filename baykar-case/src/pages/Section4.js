@@ -1,9 +1,12 @@
 import React from "react";
 import image4 from "../image4.jpeg";
+import DecoVideo from "../assets/Deco-Video.svg";
+import Desktop from "../assets/Desktop.svg";
+import GreenCircle from "../assets/GreenCircle.svg";
 const Section4 = () => {
   return (
     <section className="flex flex-col md:flex-row gap-8 md:gap-20 py-12 md:py-20 px-4 md:px-20 bg-amber-50">
-      <div className="flex md:flex-row flex-col gap-8 md:gap-20 md:p-20 py-12 px-4 rounded-3xl bg-white">
+      <div className="flex md:flex-row flex-col gap-8 md:gap-20 md:p-20 py-12 px-4 rounded-3xl bg-white mx-auto">
         <div className="flex flex-col gap-6 ">
           <h1 class="text-black font-bold text-5xl md:text-6xl   text-center md:text-left">
             Why join us
@@ -62,14 +65,14 @@ const Section4 = () => {
             </p>
           </div>
 
-          <div className="flex   md:text-left">
-            <button class="px-4 py-2 border-2 flex gap-2 border-custom-brown  text-sm rounded-lg text-custom-brown hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+          <div className="flex  md:text-left">
+            <button class="px-4 py-2 border-2 flex gap-2 border-custom-brown text-sm rounded-lg text-custom-brown hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
               <span class="pt-0.5"> Sign up now </span>
             </button>
           </div>
         </div>
 
-        <div className=" rounded-3xl bg-amber-400 h-[234px] w-[329px] md:h-[350px] md:w-[520px]">
+        <div className=" rounded-3xl bg-white h-[234px] w-[329px] md:h-[350px] md:w-[520px] shadow-lg  ">
           <div className="flex h-[41px] flex-row gap-1.5 md:gap-1.5 py-2 md:py-2 px-4 md:px-4 items-center">
             <svg
               width="10"
@@ -109,12 +112,28 @@ const Section4 = () => {
                 fill="#22C55E"
               />
             </svg>
+            <div className="relative w-full h-full ">
+              <img
+                className="z-0 relative scale-[1.2] lg:scale-[1.3] lg:translate-y-3 lg:-translate-x-12"
+                src={DecoVideo}
+                alt="Video decoration"
+              />
+              <img
+                className="z-20 absolute  justify-items-center lg:top-20 "
+                src={Desktop}
+                alt="Desktop"
+              />
+              <img
+                className="z-20 absolute bottom-4 left-24 scale-[0.4] lg:scale-[1]"
+                src={GreenCircle}
+                alt="Green Circle decoration"
+              />
+            </div>
           </div>
+
           <div className="flex  w-full ">
             <img
               className="  z-10 px-2.5 pb-2.5 rounded-b-3xl h-[193px]  md:h-[309px]"
-              /* width="520px"
-          height="309px" */
               src={image4}
             />
           </div>
