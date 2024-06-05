@@ -1,8 +1,7 @@
 import React from "react";
-import Nike from "../../src/nike.png";
+import Col from "../../src/assets/photos/Col.png";
 const Header = () => {
   return (
-    
     <section className="flex flex-col md:flex-row gap-8 md:gap-20 py-12 md:py-20 px-4 md:px-20">
       <div className="flex flex-col gap-6 ">
         <h1 class="text-black font-bold text-5xl md:text-7xl   text-center md:text-left">
@@ -45,14 +44,14 @@ const Header = () => {
         </div>
       </div>
 
-      <div class="relative   rounded-3xl bg-amber-400 h-[276px] w-[272px] md:h-[372px] md:w-[367px]">
+      
         <img
-          class=" absolute top-0 left-0 z-10 "
-          width="486"
-          height="388"
-          src={Nike}
+          class="  "
+          width="388"
+          height="486"
+          src={Col}
         />
-      </div>
+      
     </section>
   );
 };

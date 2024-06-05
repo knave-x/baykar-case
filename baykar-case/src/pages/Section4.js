@@ -72,72 +72,76 @@ const Section4 = () => {
           </div>
         </div>
 
-        <div className=" rounded-3xl bg-white h-[234px] w-[329px] md:h-[350px] md:w-[520px] shadow-lg  ">
-          <div className="flex h-[41px] flex-row gap-1.5 md:gap-1.5 py-2 md:py-2 px-4 md:px-4 items-center">
-            <svg
-              width="10"
-              height="11"
-              viewBox="0 0 10 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 9.69369C2.69875 9.69369 0.833328 7.82827 0.833328 5.52702C0.833328 3.22577 2.69875 1.36035 5 1.36035C7.30125 1.36035 9.16666 3.22577 9.16666 5.52702C9.16666 7.82827 7.30125 9.69369 5 9.69369Z"
-                fill="#E11D48"
-              />
-            </svg>
+        <div className="rounded-3xl bg-white h-[234px] w-[329px] md:h-[350px] md:w-[520px] shadow-lg relative">
+  <div className="flex h-[41px] flex-row gap-1.5 md:gap-1.5 py-2 md:py-2 px-4 md:px-4 items-center">
+    <svg
+      width="10"
+      height="11"
+      viewBox="0 0 10 11"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="z-10"
+    >
+      <path
+        d="M5 9.69369C2.69875 9.69369 0.833328 7.82827 0.833328 5.52702C0.833328 3.22577 2.69875 1.36035 5 1.36035C7.30125 1.36035 9.16666 3.22577 9.16666 5.52702C9.16666 7.82827 7.30125 9.69369 5 9.69369Z"
+        fill="#E11D48"
+      />
+    </svg>
 
-            <svg
-              width="10"
-              height="9"
-              viewBox="0 0 10 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 8.69369C2.69875 8.69369 0.833328 6.82827 0.833328 4.52702C0.833328 2.22577 2.69875 0.360352 5 0.360352C7.30125 0.360352 9.16666 2.22577 9.16666 4.52702C9.16666 6.82827 7.30125 8.69369 5 8.69369Z"
-                fill="#FBBF24"
-              />
-            </svg>
+    <svg
+      width="10"
+      height="9"
+      viewBox="0 0 10 9"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="z-10"
+    >
+      <path
+        d="M5 8.69369C2.69875 8.69369 0.833328 6.82827 0.833328 4.52702C0.833328 2.22577 2.69875 0.360352 5 0.360352C7.30125 0.360352 9.16666 2.22577 9.16666 4.52702C9.16666 6.82827 7.30125 8.69369 5 8.69369Z"
+        fill="#FBBF24"
+      />
+    </svg>
 
-            <svg
-              width="10"
-              height="9"
-              viewBox="0 0 10 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5 8.69369C2.69875 8.69369 0.833328 6.82827 0.833328 4.52702C0.833328 2.22577 2.69875 0.360352 5 0.360352C7.30125 0.360352 9.16666 2.22577 9.16666 4.52702C9.16666 6.82827 7.30125 8.69369 5 8.69369Z"
-                fill="#22C55E"
-              />
-            </svg>
-            <div className="relative w-full h-full ">
-              <img
-                className="z-0 relative scale-[1.2] lg:scale-[1.3] lg:translate-y-3 lg:-translate-x-12"
-                src={DecoVideo}
-                alt="Video decoration"
-              />
-              <img
-                className="z-20 absolute  justify-items-center lg:top-20 "
-                src={Desktop}
-                alt="Desktop"
-              />
-              <img
-                className="z-20 absolute bottom-4 left-24 scale-[0.4] lg:scale-[1]"
-                src={GreenCircle}
-                alt="Green Circle decoration"
-              />
-            </div>
-          </div>
+    <svg
+      width="10"
+      height="9"
+      viewBox="0 0 10 9"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="z-10"
+    >
+      <path
+        d="M5 8.69369C2.69875 8.69369 0.833328 6.82827 0.833328 4.52702C0.833328 2.22577 2.69875 0.360352 5 0.360352C7.30125 0.360352 9.16666 2.22577 9.16666 4.52702C9.16666 6.82827 7.30125 8.69369 5 8.69369Z"
+        fill="#22C55E"
+      />
+    </svg>
+    <div className="relative w-full h-full">
+      <img
+        className="z-0 relative scale-[1.2] lg:scale-[1.3] lg:translate-y-3 lg:-translate-x-12"
+        src={DecoVideo}
+        alt="Video decoration"
+      />
+      <img
+        className="z-20 absolute top-20 left-1/2 transform -translate-x-1/2"
+        src={Desktop}
+        alt="Desktop"
+      />
+      <img
+        className="z-20 absolute bottom-4 left-24 scale-[0.4] lg:scale-[1]"
+        src={GreenCircle}
+        alt="Green Circle decoration"
+      />
+    </div>
+  </div>
 
-          <div className="flex  w-full ">
-            <img
-              className="  z-10 px-2.5 pb-2.5 rounded-b-3xl h-[193px]  md:h-[309px]"
-              src={image4}
-            />
-          </div>
-        </div>
+  <div className="flex w-full">
+    <img
+      className="z-10 px-2.5 pb-2.5 rounded-b-3xl h-[193px] md:h-[309px]"
+      src={image4}
+    />
+  </div>
+</div>
+
       </div>
     </section>
   );
